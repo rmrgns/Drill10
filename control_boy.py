@@ -31,12 +31,14 @@ def create_world():
     running = True
 
 
-    grass = Grass()
+    grass = Grass(400, 90)
     game_world.add_object(grass, 0)
+
+    grass_forward = Grass(400, 50)
+    game_world.add_object(grass_forward, 2)
 
     boy = Boy()
     game_world.add_object(boy, 1)
-
 
 
 def update_world():
